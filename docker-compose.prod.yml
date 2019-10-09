@@ -5,9 +5,11 @@ services:
     build: 
       dockerfile: ./docker/Dockerfile-prod
       context: ./
-    image: my_project_python # replace with "registry/image" if pushing to a docker registry
-    env_file:
-      - prod.env
+    image: my_project_01
+    
+    # uncomment the below two lines if you plan on running via docker-compose in production
+    #env_file: 
+    #  - .env_prod
 
     command: 
       python /code/example.py

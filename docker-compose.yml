@@ -3,11 +3,11 @@ version: "3.2"
 services:
   python:       
     build: 
-      dockerfile: ./docker/dev.dockerfile
+      dockerfile: ./docker/Dockerfile-dev
       context: ./
     image: my_project_01
     env_file:
-      - dev.env
+      - .env_dev
 
     ports:
       - "8888:8888"

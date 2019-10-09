@@ -127,7 +127,4 @@ dmypy.json
 # Zip files
 *.zip
 
-# VS Code
-.vscode
-
 # Specific items
