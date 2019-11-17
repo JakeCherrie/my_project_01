@@ -11,7 +11,7 @@ As an example - here's my normal development process. Using it I can get from de
 ##### Developing and Packaging
 
 1. Clone the template down. Update the `environment.yml` as needed with packages I know I'll need, and run `docker-compose build`. This will build the development image with all the packages I defined installed within it.
-2. Create a `.env_dev` file with development environment variables
+2. Create a `.env_dev` file with development environment variables (we can then simply access these variables via os.environ.get('variable_name'))
 3. Run `docker-compose up` and navigate to JupyterLab, which will be running on [http://localhost:8888](http://localhost:8888). We can access it by entering in the token `local_dev`.
 4. From there prototype and develop a model/process using Jupyter Notebooks, saving any notebooks I create along the way into `/notebooks` as a development diary. Any final artifacts/models I plan on using in production I save within `/code`.
 5. Once I have a final version of my code, save it (and any models it relies on) into `/code`.
