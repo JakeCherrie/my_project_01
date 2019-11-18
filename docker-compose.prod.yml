@@ -5,7 +5,7 @@ services:
     build: 
       dockerfile: ./docker/Dockerfile-prod
       context: ./
-    image: prod-childhood-education
+    image: my_project
     
     # uncomment the below two lines if you plan on running via docker-compose in production
     #env_file: 

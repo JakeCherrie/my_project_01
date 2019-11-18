@@ -5,7 +5,7 @@ services:
     build: 
       dockerfile: ./docker/Dockerfile-dev
       context: ./
-    image: dev-childhood-education
+    image: my_project
     env_file:
       - .env_dev
 
