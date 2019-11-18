@@ -13,7 +13,7 @@ services:
       - "8888:8888"
 
     command: 
-      jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='local_dev'
+      jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='token'
 
     volumes:
       - ./data:/data
